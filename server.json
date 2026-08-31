@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.courtrules/court-rules",
+  "title": "Court Rules",
+  "description": "Judge-level filing rules, court holidays and enforcement data for US federal and state courts.",
+  "version": "1.0.0",
+  "websiteUrl": "https://docs.courtrules.app",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.courtrules.app/mcp"
+    }
+  ]
+}
