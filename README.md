@@ -1,5 +1,7 @@
 # Court Rules MCP Server
 
+[![Court Rules MCP connector: tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/app.courtrules/court-rules/badges/score.svg)](https://glama.ai/mcp/connectors/app.courtrules/court-rules)
+
 Judge-level court filing rules, court holiday calendars, and privacy enforcement
 data for US federal and state courts, as an MCP server.
 
