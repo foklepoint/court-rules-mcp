@@ -16,28 +16,39 @@ back to the page and section of the order it came from.
 
 ## Quick start
 
-No install. Connect to the hosted server:
+No install. Add the hosted server, then sign in once when your client asks. It
+opens the Court Rules console in your browser; approve the connection and the
+client stays signed in.
+
+Claude Code:
 
 ```bash
 claude mcp add --transport http court-rules https://mcp.courtrules.app/mcp
 ```
 
-Or in any MCP client config:
+Then run `/mcp`, select `court-rules`, and choose **Authenticate**.
 
-```json
-{
-  "mcpServers": {
-    "court-rules": {
-      "url": "https://mcp.courtrules.app/mcp",
-      "transport": "streamable-http"
+- **Claude Desktop and claude.ai:** Settings > Connectors > Add custom
+  connector, URL `https://mcp.courtrules.app/mcp`, then Connect.
+- **Cursor:** add the server to `~/.cursor/mcp.json` and click the sign-in
+  prompt in Cursor Settings > MCP.
+
+  ```json
+  {
+    "mcpServers": {
+      "court-rules": {
+        "url": "https://mcp.courtrules.app/mcp"
+      }
     }
   }
-}
-```
+  ```
 
-Sample data works with no account: 3 courts, EDNY holidays, and 3 enforcement
-events. Every response carries an `access` field so a client can tell sample
-data from live data. Full coverage is behind OAuth.
+- **VS Code, Codex CLI, and others:** see the
+  [quick start](https://docs.courtrules.app/guides/mcp-court-rules#quick-start).
+
+Scripts, backends, and clients without sign-in can send the API key from
+https://console.courtrules.app as `Authorization: Bearer <api_key>`. Keys do not
+expire.
 
 ## Coverage
 
