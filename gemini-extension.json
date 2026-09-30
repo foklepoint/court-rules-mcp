@@ -1,0 +1,10 @@
+{
+  "name": "court-rules",
+  "version": "1.0.0",
+  "description": "Judge-level filing rules, court holidays and enforcement data for US federal and state courts.",
+  "mcpServers": {
+    "court-rules": {
+      "httpUrl": "https://mcp.courtrules.app/mcp"
+    }
+  }
+}
